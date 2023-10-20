@@ -8,12 +8,12 @@ interface NavigationCardProps {
 
 const NavigationCard = ({ title, description, href }: NavigationCardProps) => {
     return (
-        <div>
-            <Link href={href}>
+        <Link href={href}>
+            <div className="card">
                 <h2>{title}</h2>
                 <span>{description}</span>
-            </Link>
-        </div>
+            </div>
+        </Link>
     )
 }
 
