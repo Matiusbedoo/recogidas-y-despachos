@@ -1,4 +1,4 @@
-import { NavigationCard } from "@/components/NavigationCard";
+import { NavigationCard } from "@/components/ui/NavigationCard";
 
 export default function Home() {
   return (
@@ -19,6 +19,11 @@ export default function Home() {
           title="Envios"
           description="Envios"
           href="/envios" />
+
+        <NavigationCard
+          title="Usuarios"
+          description="Gestionar los Usuarios"
+          href='/users' />
       </div>
     </main>
   )
