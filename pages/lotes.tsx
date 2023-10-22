@@ -1,7 +1,8 @@
+
 const LotesPage = () => {
     return (
-        <h1>Lotes Page</h1>
+        <h1>Gestions de lotes</h1>
     )
 }
 
-export { LotesPage }
+export default LotesPage
