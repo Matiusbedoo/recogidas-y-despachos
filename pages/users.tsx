@@ -1,6 +1,7 @@
 import { API_ROUTES, fetcher } from "@/Service/apiConfig"
+import { Tooltip } from "@/components/ui/Tooltip"
 import { NavBar } from "@/components/ui/navBar"
-import { UserActions } from "@/components/users"
+import { UserActions } from "@/components/users/UserActions"
 import { Layout } from "@/layouts"
 import Image from "next/image"
 import Link from "next/link"
@@ -46,7 +47,9 @@ const UsersPage = () => {
 
                                     <td>{users.name}</td>
                                     <td>{users.email}</td>
-                                    <td><UserActions/></td>
+                                    <td>
+                                        <UserActions user={users}/>
+                                    </td>
                                 </tr>
                             )
                         })}

@@ -10,6 +10,10 @@ h2 {
   @apply text-xl font-medium tracking-wide text-gray-800;
 }
 
+h3 {
+  @apply text-lg font-medium tracking-wide text-gray-700
+}
+
 .card {
   @apply flex flex-col items-center bg-gray-100 px-4 py-2 rounded-xl shadow-lg hover:scale-105;
 }
@@ -28,4 +32,12 @@ th {
 
 td {
   @apply h-12 px-6 text-sm transition duration-300 border-t border-l first:border-l-0 border-slate-200 stroke-slate-500 text-slate-500
+}
+
+button.primary {
+  @apply bg-indigo-500 text-white px-3 py-2 rounded-lg hover:bg-indigo-700 shadow-md
+}
+
+button.secondary {
+  @apply bg-gray-500 text-white px-3 py-2 rounded-lg hover:bg-gray-700 shadow-md
 }
